@@ -1,6 +1,9 @@
 import * as React from "react";
 import {getGrailData} from "../actions/GrailActions";
-import {GrailThumb} from "../components/GrailThumb";
+import {HashRouter} from "react-router-dom";
+import {GrailGallery} from "../components/GrailGallery";
+import {PropRoute} from "../components/PropRoute";
+import {SingleGrail} from "../components/SingleGrail";
 
 export class GrailsPage extends React.Component {
     constructor(props) {
@@ -18,14 +21,13 @@ export class GrailsPage extends React.Component {
     }
 
     render() {
+        const {match} = this.props;
         return (
             <React.Fragment>
-                <h1>Grails</h1>
-                {this.state.grails.map(grail=>{
-                    return (
-                        <GrailThumb data={grail}/>
-                    );
-                })}
+                <HashRouter>
+                    <PropRoute exact path={match.path} component={GrailGallery} grails={this.state.grails}/>
+                    <PropRoute path={`${match.path}/:id`} component={SingleGrail} grails={this.state.grails}/>
+                </HashRouter>
             </React.Fragment>
         );
     }

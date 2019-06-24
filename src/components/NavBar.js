@@ -12,7 +12,7 @@ export class NavBar extends React.Component {
         return (
             <nav className="navbar-container">
                 <h1 className="header">Grails of Dionysus</h1>
-                <div class="links">
+                <div className="links">
                     <Link className="link" to="/">Home</Link>
                     <Link className="link" to="/grails">Grails</Link>
                     <Link className="link" to="/about">About</Link>

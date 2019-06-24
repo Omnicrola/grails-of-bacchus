@@ -1,0 +1,11 @@
+@import 'colors.scss';
+
+.thumbnail-container {
+  background: $lightBlue;
+  border:1px solid $lightBlue;
+
+  .link {
+    text-decoration: none;
+    color: $textColor;
+  }
+}
