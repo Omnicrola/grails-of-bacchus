@@ -1,0 +1,29 @@
+@import 'colors';
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+
+  .navbar {
+    margin: auto;
+    display: flex;
+
+    li {
+      list-style: none;
+
+      .link {
+        text-decoration: none;
+        padding: 10px;
+        background: white;
+      }
+
+      .link:hover {
+        color: $backgroundColor;
+        background-color: $textColor;
+      }
+    }
+  }
+}

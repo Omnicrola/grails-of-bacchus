@@ -1,0 +1,11 @@
+@import 'colors.scss';
+
+.App {
+  background: $backgroundColor;
+
+  .page-container {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
