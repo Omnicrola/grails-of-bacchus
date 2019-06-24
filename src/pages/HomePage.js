@@ -10,6 +10,7 @@ export class HomePage extends React.Component {
         return (
             <React.Fragment>
                 <h1>Home</h1>
+                <p></p>
             </React.Fragment>
         );
     }

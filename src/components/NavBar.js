@@ -11,12 +11,12 @@ export class NavBar extends React.Component {
     render() {
         return (
             <nav className="navbar-container">
-                <h1>Grails of Dionysus</h1>
-                <ul className="navbar">
-                    <li><Link className="link" to="/">Home</Link></li>
-                    <li><Link className="link" to="/grails">Grails</Link></li>
-                    <li><Link className="link" to="/about">About</Link></li>
-                </ul>
+                <h1 className="header">Grails of Dionysus</h1>
+                <div class="links">
+                    <Link className="link" to="/">Home</Link>
+                    <Link className="link" to="/grails">Grails</Link>
+                    <Link className="link" to="/about">About</Link>
+                </div>
             </nav>
         )
     }

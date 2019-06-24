@@ -2,28 +2,24 @@
 
 .navbar-container {
   display: flex;
-  flex-direction: column;
   text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
   background-color: white;
-  padding: 10px;
+  padding: 10px 40px;
 
-  .navbar {
-    margin: auto;
-    display: flex;
+  .header {
+    margin-right: 20%;
+  }
 
-    li {
-      list-style: none;
+  .link {
+    text-decoration: none;
+    padding: 10px;
+    background: white;
+  }
 
-      .link {
-        text-decoration: none;
-        padding: 10px;
-        background: white;
-      }
-
-      .link:hover {
-        color: $backgroundColor;
-        background-color: $textColor;
-      }
-    }
+  .link:hover {
+    color: $backgroundColor;
+    background-color: $textColor;
   }
 }
